@@ -1,0 +1,21 @@
+# brute force
+class Solution {
+public:
+    vector<int> rearrangeArray(vector<int>& nums) {
+        vector<int>pos;
+        vector<int>neg;
+        vector<int>ans;
+        for(int it=0; it<nums.size();it++){
+            if(nums[it]>0) pos.push_back(nums[it]);
+            else neg.push_back(nums[it]);
+        }
+        for(int i=0; i<pos.size();i++){
+            ans.push_back(pos[i]);
+             ans.push_back(neg[i]);
+        }
+        return ans;
+    }
+};
+
+
+#optimal
