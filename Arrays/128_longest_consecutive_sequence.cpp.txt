@@ -1,0 +1,23 @@
+#brute
+class solution {
+private:
+bool linearsearch(vector<int>&a, int num){
+for(int i=0;i<n;i++)
+if(a[i]==num){
+return true;
+}
+public:
+int longestConsecutive(vector<int>& a){
+int n=nums.size();
+int longest=1;
+for(int i=0;i<n;i++){
+int x=nums[i];
+int count=1;
+while(linearsearch(nums,x+1)==true){
+x++;
+count++;
+}
+longest=max(longest,count);}
+return longest;
+}
+};
