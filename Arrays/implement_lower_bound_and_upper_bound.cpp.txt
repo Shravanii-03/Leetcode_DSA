@@ -56,8 +56,7 @@ return n;
 }
 };
 
-
-#optimal for upper
+#optimal 
 class LowerBoundFinder {
 public:
     
