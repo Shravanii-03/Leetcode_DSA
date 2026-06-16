@@ -1,0 +1,19 @@
+class Solution {
+public
+    int findPeakElement(vectorint& nums) {
+        int n=nums.size();
+        int low = 0, high = n - 1;
+
+        while(lowhigh){
+            int mid=(low+high)2;
+            if(nums[mid]nums[mid+1]){
+                high=mid;
+            }
+            else{
+                low=mid+1;
+            }
+        }
+
+        return low ;    #high also works
+    }
+};
